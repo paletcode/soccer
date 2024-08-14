@@ -1,0 +1,19 @@
+{
+  "name": "soccer-info",
+  "version": "1.0.0",
+  "description": "Soccer API",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:1": "node --watch src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.7.0"
+  }
+}

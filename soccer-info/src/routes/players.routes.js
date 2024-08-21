@@ -1,5 +1,5 @@
 import {Router} from 'express';
-
+import { getPlayers, getIdPlayer, createPlayer, updatePlayer, deletePlayer} from '../controllers/players.controllers.js'
 const router = Router();
 
 router.get("/", (req, res) =>{
@@ -7,29 +7,19 @@ router.get("/", (req, res) =>{
 });
 
 // get all players (not recommended for production)
-router.get("/players", (req, res) => {
-    console.log('players query')
-});
+router.get("/players", getPlayers);
 
 //get a player by id
-router.get("/players/:id", (req, res) => {
-    
-});
+router.get("/players/:id", getIdPlayer);
 
 //create a player
-router.post("/players", (req, res) => {
-    
-})
+router.post("/players", createPlayer)
 
 //update a player
-router.put('/players', (req, res) => {
-
-});
+router.put('/players', updatePlayer);
 
 //delete a player
-router.delete('/players', (req, res) => {
-
-});
+router.delete('/players', deletePlayer);
 
 
 
